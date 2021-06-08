@@ -1,0 +1,31 @@
+<div class="row">
+    <form class="col s12 ">
+        <div class="card horizontal">
+            <div class="card-image">
+                <img src="https://lorempixel.com/100/275/nature/6">
+            </div>
+            <div class="card-stacked">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name" [(ngModel)]="product.name" name="name" type="text" class="validate">
+                        <label for="first_name">Product Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="description" [(ngModel)]="product.description" name="description" type="text" class="validate">
+                        <label for="description">Description</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="sas" type="text" [(ngModel)]="product.price" name="price" class="validate">
+                        <label for="sas">Price</label>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <a class="waves-effect waves-light btn " (click)="addProduct()">save</a>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+</div>
